@@ -1,13 +1,12 @@
-# PX4 Architectural Overview
-PX4 架构综述
+# PX4 Architectural Overview（PX4 架构综述）
 
 PX4包含两个主要的层面：飞控栈（用于滤波估计以及飞行控制系统）、中间栈（一个通用的机器层，可支撑自主机器，提供内外通信以及硬件集成）。
+PX4共享一个代码库（codebase，无论属于何种飞行器）。同时，所有的px4代码、系统设计均是基于可重构的：
+1）所有代码函数均可更改以及重复使用；
+2）均通过异步信息传递进行通信；
+3）系统可处理变工作量事务。
 
 
-PX4 consists of two main layers: the [flight stack](#flight-stack) is an estimation and flight control system,
-and the [middleware](#middleware) is a general robotics layer that can support any type of autonomous robot, providing internal/external communications and hardware integration.
-
-All PX4 [airframes](../airframes/README.md) share a single codebase (this includes other robotic systems like boats, rovers, submarines etc.). The complete system design is [reactive](http://www.reactivemanifesto.org), which means that:
 
 - All functionality is divided into exchangeable and reusable components
 - Communication is done by asynchronous message passing
