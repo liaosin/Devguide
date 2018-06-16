@@ -2,9 +2,9 @@
 
 PX4包含两个主要的层面：飞控栈（用于滤波估计以及飞行控制系统）、中间栈（一个通用的机器层，可支撑自主机器，提供内外通信以及硬件集成）。
 PX4共享一个代码库（codebase，无论属于何种飞行器）。同时，所有的px4代码、系统设计均是基于可重构的：
-1）所有代码函数均可更改以及重复使用；
-2）均通过异步信息传递进行通信；
-3）系统可处理变工作量事务。
+- 所有代码函数均可更改以及重复使用；
+- 均通过异步信息传递进行通信；
+- 系统可处理变工作量事务。
 
 
 
@@ -13,7 +13,7 @@ PX4共享一个代码库（codebase，无论属于何种飞行器）。同时，
 - The system can deal with varying workload
 
 
-## High-Level Software Architecture{#architecture}
+## High-Level Software Architecture{#architecture}（高级软件架构）
 
 The diagram below provides a detailed overview of the building blocks of PX4. 
 The top part of the diagram contains middleware blocks, while the lower
