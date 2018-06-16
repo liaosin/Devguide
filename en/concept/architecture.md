@@ -1,4 +1,8 @@
 # PX4 Architectural Overview
+PX4 架构综述
+
+PX4包含两个主要的层面：飞控栈（用于滤波估计以及飞行控制系统）、中间栈（一个通用的机器层，可支撑自主机器，提供内外通信以及硬件集成）。
+
 
 PX4 consists of two main layers: the [flight stack](#flight-stack) is an estimation and flight control system,
 and the [middleware](#middleware) is a general robotics layer that can support any type of autonomous robot, providing internal/external communications and hardware integration.
